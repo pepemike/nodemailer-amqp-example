@@ -54,7 +54,8 @@ amqplib.connect(config.amqp, (err, connection) => {
                 }
                 sent++;
                 sender({
-                    to: 'recipient@example.com',
+//                    to: 'recipient@example.com',
+                    to: 'pepe.mike@sapo.pt',
                     subject: 'Test message #' + sent,
                     text: 'hello world!'
                 }, sendNext);
